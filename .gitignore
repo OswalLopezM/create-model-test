@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+test images/
+dataset/
+models/
+minerva/
+*.h5
