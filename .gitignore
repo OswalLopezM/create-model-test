@@ -132,4 +132,5 @@ test images/
 dataset/
 models/
 minerva/
+new_data_set/
 *.h5

@@ -46,8 +46,8 @@ img_width, img_height = 28, 28
 #D:\Tesis\Applications\Hitting-Gym-with-NN\poundcake\images\data5\train
 train_data_dir = './dataset/images_dataset_train_test/train'
 validation_data_dir = './dataset/images_dataset_train_test/test'
-nb_train_samples = 260705
-nb_validation_samples = 111744
+nb_train_samples = 262007
+nb_validation_samples = 112157
 epochs = 10
 batch_size = 32
 
@@ -72,7 +72,7 @@ model.add(Flatten())
 model.add(Dense(64,activation ="relu"))
 model.add(Dense(128,activation ="relu"))
 
-model.add(Dense(26,activation ="softmax"))
+model.add(Dense(27,activation ="softmax"))
 
 # model.compile(loss='categorical_crossentropy',
 #               optimizer='rmsprop',
@@ -116,7 +116,7 @@ model.fit_generator(
     validation_steps=nb_validation_samples // batch_size)
 
 #save the model so it can easily be compiled later for predictions
-model.save_weights('minerva-50.h5')
+# model.save_weights('minerva-50.h5')
 model.save('minerva-10.h5')
 
 
